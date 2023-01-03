@@ -76,3 +76,10 @@ A series of 5 programming languages based on complexity-layers:
 Person.Name
 
 Name : Person -> string
+
+Opt<Person> -> string
+
+person?.Name
+
+person >>= Name?????
+
