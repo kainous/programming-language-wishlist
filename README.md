@@ -47,6 +47,7 @@ A series of 5 programming languages based on complexity-layers:
   * Can use as a proof assistant
   * Comes with literate options
   * Has a Prelude library with the following
+  * Has an operator-import, such that any program can select an operator-style
     * Operators on Semigroupoid
       * (>>) compose to the right
       * (<<) compose to the left
@@ -55,4 +56,23 @@ A series of 5 programming languages based on complexity-layers:
       * (|>) apply to the right
       * (<||) uncurry to the left
       * (||>) uncurry to the right
+    ... (unfinished)
+    * Operators on comonads
     
+4. An eager Ada-style language, similar to C#
+  * For any defined type, in order to give it similarity to OOP, `this` is implicitly passed as the **last** parameter, instead of the first parameter
+    * (.) is defined as left apply and auto-curry, such that the following would be interpreted by #3 as:
+      * `person.name` would have been `name person`
+      * `manager.addEmployee(person, "developer")` would have been `addEmployee person "developer" manager` or `manager |> addEmployee person "developer"`
+  *  `this` has the property that it comes at the **end** of the function, instead of the beginning
+  * Operator-style has the following:
+    * Treating `Opt<T>` as a monad:
+      * (?.) means 
+    * Since pointers are bimonads:
+      * (&) 
+
+
+
+Person.Name
+
+Name : Person -> string
