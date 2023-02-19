@@ -1,0 +1,16 @@
+# Intended Targets
+In addition to being able to target applications written for various versions of modern operating systems and phones, the intention of this ecosystem is to target various
+machine code instruction sets, from x86, x64, ARM, or even microcontrollers.
+
+However, it's not just to write code that targets a specific instruction set, but also that can be used to target other subsystems, such as:
+* A replacement for WASM (Web Assembly) where validation has occurred regarding security and is only allowed specific and isolated access to various hardware
+* Database queries (for relational databases, graph databases, etc.) which are specifically type-checked and guarded for any transactions
+* GPGPU instructions, which can be further targeted for the specific GPUs
+* Quantum computing via Linear Types
+* A linear langauge for describing valid communication sessions between client and server
+* for generating FPGA, ASIC, PLC, and other PLD applications
+
+A variation of the language that serves only as a data source would describe:
+* application settings and programmable configurations accepting programmable blocks and iteration to prevent duplication
+* infrastructure-as-code (IaC)
+* 
