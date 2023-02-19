@@ -1,6 +1,7 @@
 # The Ecosystem
 The ecosystem should include a basis of at least the following:
 * [Package Manager](package-manager.md)
+* [Known Optimizations](known-optimizations.md)
 
 # Programming Language Wishlist
 
