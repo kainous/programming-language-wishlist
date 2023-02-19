@@ -36,6 +36,32 @@ purposes of evaluating the software for particular requirements. Such uses may i
 * Conformance to Export Compliance
 * Conformance to Acceptance Testing for a store
 
+## Type of Packages
+There are 5 main types of packages:
+* Assets - non-executables
+* Reusable Library - code that does not have any entrypoint to run, but provides reusable information, and may also include some assets
+* Foreground Application - which can include 0 or more reusable libraries and has a single entry point for execution
+* Background Service - which can include 0 or more reusable libraries, and may either have a single entry point, contain start/stop/pause/resume semantics, or both
+* Suite - which can include 1 or more of: reusable libraries, foreground applications, and background services
+
+Attachable manifest entries may be added to the packages during download and install, which will point the application to a service management system that contains entries for settings associated with the package. By default this is the same as the package manager, but may also be a system created by the manufacturer.
+
+This would be any compatible settings store and feature manager.
+
 ## Drivers
 In addition to static analysis for conformance, the primary manifest may also include information for how a driver is to be used by the system. For instance, it will
 record interrupts used/overridden, and DMA locations used.
+
+## Fully-Qualified
+The package manager handles dependencies according to version, downloading multiple versions if the application requires, in order to avoid dependency hell.
+
+## Security
+The package manager has a mechanism to report a package as being insecure, to elevate that the user should act swiftly.
+
+# Background Installation
+The package manager must allow applications to download enhancements and updates in the background without affecting the running suite. Additionally
+
+The package manager allows a final 
+
+## Future-Work
+A redundancy management tool will allow two versions of an application to run simultaneously, but to turn on and off flags in a way to slowly upgrade the system.
