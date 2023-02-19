@@ -1,3 +1,7 @@
+# The Ecosystem
+The ecosystem should include a basis of at least the following:
+* [Package Manager](Package%20Manager.md)
+
 # Programming Language Wishlist
 
 A series of 5 programming languages based on complexity-layers:
